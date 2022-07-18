@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  color: $black;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container{
+  max-width: 1410px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.green-text{
+  color: $green;
+}

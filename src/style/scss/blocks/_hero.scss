@@ -1,0 +1,40 @@
+.hero{
+
+
+  &__title{
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+    line-height: 78px;
+    max-width: 889px;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    padding-bottom: 69px;
+  }
+
+  &__text{
+    font-size: 18px;
+    line-height: 180%;
+    max-width: 725px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__get-started{
+    text-align: center;
+  }
+
+  &__input{
+    width: 100%;
+    max-width: 420px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(38, 50, 56, 0.1);
+    &:focus::-webkit-input-placeholder { color:transparent;
+
+  }
+}
+}

@@ -1,0 +1,163 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  color: #263238;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1410px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.green-text {
+  color: #008000;
+}
+
+.header {
+  padding-top: 70px;
+}
+.header__container {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__nav-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 310px;
+}
+.header__nav {
+  padding-top: 20px;
+}
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+}
+.header__nav-link {
+  color: #263238;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.header__nav-link:hover {
+  color: #008000;
+  transition: ease-in-out 0.2s;
+}
+.header__button-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.header__sign-in {
+  border: 1px solid #263238;
+  border-radius: 10px;
+  color: #263238;
+  padding: 21px 44px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.header__sign-in:hover {
+  background-color: #008000;
+  transition: ease-in-out 0.2s;
+  color: white;
+}
+.header__sign-up {
+  border: 1px solid #263238;
+  border-radius: 10px;
+  color: white;
+  padding: 21px 44px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: #008000;
+}
+.header__sign-up:hover {
+  background-color: white;
+  transition: ease-in-out 0.2s;
+  color: #263238;
+}
+.header__decor {
+  position: relative;
+  top: -135px;
+  left: 0;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 70px;
+  text-align: center;
+  line-height: 78px;
+  max-width: 889px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+  padding-bottom: 69px;
+}
+.hero__text {
+  font-size: 18px;
+  line-height: 180%;
+  max-width: 725px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.hero__get-started {
+  text-align: center;
+}
+.hero__input {
+  width: 100%;
+  max-width: 420px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(38, 50, 56, 0.1);
+}
+.hero__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/*# sourceMappingURL=main.css.map */
