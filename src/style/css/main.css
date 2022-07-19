@@ -401,7 +401,7 @@ img {
 
 .app {
   position: relative;
-  padding-bottom: 266px;
+  padding-bottom: 200px;
 }
 .app__holder {
   background: rgba(0, 128, 0, 0.05);
@@ -428,5 +428,53 @@ img {
   position: absolute;
   top: 6px;
   left: 503px;
+}
+
+.footer {
+  background-color: rgba(242, 248, 242, 0.5);
+}
+.footer__container {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.footer__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 68px;
+}
+.footer__logo-column {
+  padding-right: 170px;
+}
+.footer__logo {
+  padding-bottom: 24px;
+}
+.footer__desc {
+  max-width: 316px;
+  font-size: 18px;
+  line-height: 177%;
+}
+.footer__subscribe-column {
+  padding-right: 186px;
+}
+.footer__subscribe-text {
+  font-size: 18px;
+  line-height: 177%;
+  max-width: 352px;
+}
+.footer__social-column {
+  padding-right: 48px;
+}
+.footer__column-title {
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 24px;
+}
+.footer__social-icon-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 /*# sourceMappingURL=main.css.map */

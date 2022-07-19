@@ -1,0 +1,58 @@
+.footer{
+
+  background-color: rgba(242, 248, 242, 0.5);
+
+  &__container{
+    max-width: 1620px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 68px;
+  }
+
+  &__logo-column{
+    padding-right: 170px;
+  }
+
+  &__logo{
+    padding-bottom: 24px;
+  }
+
+  &__desc{
+    max-width: 316px;
+    font-size: 18px;
+    line-height: 177%;
+  }
+
+  &__subscribe-column{
+    padding-right: 186px;
+  }
+
+  &__subscribe-text{
+    font-size: 18px;
+    line-height: 177%;
+    max-width: 352px;
+  }
+
+  &__social-column{
+    padding-right: 48px;
+  }
+
+  &__column-title{
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+
+  &__social-icon-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
