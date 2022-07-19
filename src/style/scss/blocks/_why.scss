@@ -1,0 +1,50 @@
+.why{
+
+  padding-bottom: 200px;
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__title{
+    font-size: 64px;
+    line-height: 72px;
+    max-width: 465px;
+  }
+
+  &__text{
+    max-width: 455px;
+    line-height: 177%;
+    font-size: 18px;
+    padding-bottom: 48px;
+  }
+
+  &__list{
+
+  }
+
+  &__item{
+    padding-bottom: 48px;
+    font-size: 20px;
+
+    &:before{
+      counter-increment: JediCSS;
+      content: counter(JediCSS);
+      margin-right: 50px;
+      width: 64px;
+      height: 64px;
+      line-height: 2rem;
+      display: inline-block;
+      background: rgba(0, 128, 0, 0.1);
+      border-radius: 50%;
+      text-align: center;
+      color: #008000;
+      font-size: 36px;
+      font-weight: 700;
+      padding-top: 15px;
+    }
+
+  }
+}

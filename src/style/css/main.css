@@ -18,6 +18,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  counter-reset: JediCSS;
 }
 
 .container {
@@ -127,6 +128,9 @@ img {
   left: 0;
 }
 
+.hero {
+  padding-bottom: 210px;
+}
 .hero__title {
   font-weight: 700;
   font-size: 70px;
@@ -140,7 +144,7 @@ img {
 .hero__text {
   font-size: 18px;
   line-height: 180%;
-  max-width: 725px;
+  max-width: 580px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 50px;
@@ -149,6 +153,7 @@ img {
   text-align: center;
 }
 .hero__input {
+  padding-left: 25px;
   width: 100%;
   max-width: 420px;
   height: 60px;
@@ -159,5 +164,269 @@ img {
 }
 .hero__input:focus::-webkit-input-placeholder {
   color: transparent;
+}
+.hero__button {
+  border-radius: 10px;
+  background-color: #008000;
+  color: white;
+  padding: 22px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.partners {
+  padding-bottom: 200px;
+}
+.partners__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works {
+  padding-bottom: 200px;
+}
+.works__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.works__title {
+  font-size: 64px;
+  line-height: 72px;
+  max-width: 574px;
+}
+.works__text {
+  max-width: 460px;
+  line-height: 177%;
+  font-size: 18px;
+  padding-bottom: 48px;
+}
+.works__step {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 48px;
+}
+.works__step-content {
+  padding-top: 10px;
+}
+.works__step-title {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+.works__step-text {
+  font-size: 18px;
+  line-height: 180%;
+  max-width: 285px;
+}
+.works__frame {
+  border-radius: 20px;
+  background: rgba(0, 128, 0, 0.05);
+  width: 750px;
+  height: 936px;
+  position: relative;
+}
+.works__image {
+  position: absolute;
+  left: 45px;
+  top: 166px;
+}
+.works__decor {
+  position: absolute;
+  left: 280px;
+  z-index: -1;
+}
+
+.future {
+  padding-bottom: 200px;
+}
+.future__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.future__frame {
+  border-radius: 20px;
+  background: rgba(0, 128, 0, 0.05);
+  width: 750px;
+  height: 936px;
+  position: relative;
+}
+.future__image {
+  position: absolute;
+  left: 45px;
+  top: 166px;
+}
+.future__decor {
+  position: absolute;
+  left: 280px;
+  bottom: -3px;
+  z-index: -1;
+}
+.future__title {
+  font-size: 64px;
+  line-height: 72px;
+  max-width: 465px;
+}
+.future__text {
+  max-width: 455px;
+  line-height: 177%;
+  font-size: 18px;
+  padding-bottom: 48px;
+}
+.future__item {
+  max-height: 90px;
+  height: 100%;
+  background: rgba(0, 128, 0, 0.05);
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.future__item:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  bottom: 35px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../../src/img/mark.svg");
+}
+.future__item-name {
+  font-size: 24px;
+  padding-left: 25px;
+  padding-top: 33px;
+  padding-bottom: 24px;
+}
+
+.why {
+  padding-bottom: 200px;
+}
+.why__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.why__title {
+  font-size: 64px;
+  line-height: 72px;
+  max-width: 465px;
+}
+.why__text {
+  max-width: 455px;
+  line-height: 177%;
+  font-size: 18px;
+  padding-bottom: 48px;
+}
+.why__item {
+  padding-bottom: 48px;
+  font-size: 20px;
+}
+.why__item:before {
+  counter-increment: JediCSS;
+  content: counter(JediCSS);
+  margin-right: 50px;
+  width: 64px;
+  height: 64px;
+  line-height: 2rem;
+  display: inline-block;
+  background: rgba(0, 128, 0, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  color: #008000;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.reviews {
+  padding-bottom: 222px;
+}
+.reviews__title {
+  font-size: 70px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.reviews__desc {
+  font-size: 18px;
+  line-height: 177%;
+  text-align: center;
+  max-width: 455px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+.reviews__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+}
+.reviews__column {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews__content {
+  padding-left: 32px;
+  position: relative;
+  background: rgba(0, 128, 0, 0.05);
+  border-radius: 0 20px 20px 0;
+}
+.reviews__text {
+  font-size: 18px;
+  line-height: 177%;
+  max-width: 320px;
+  padding-top: 32px;
+}
+.reviews__name {
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  bottom: 28px;
+}
+.reviews__button-holder {
+  text-align: center;
+}
+.reviews__button {
+  background-color: #008000;
+  border-radius: 10px;
+  padding: 22px 70px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.app {
+  position: relative;
+  padding-bottom: 266px;
+}
+.app__holder {
+  background: rgba(0, 128, 0, 0.05);
+  border-radius: 20px;
+}
+.app__title {
+  font-size: 56px;
+  line-height: 63px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 760px;
+  padding-top: 72px;
+  padding-bottom: 50px;
+}
+.app__icon-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  align-items: flex-start;
+  padding-bottom: 66px;
+}
+.app__decor {
+  position: absolute;
+  top: 6px;
+  left: 503px;
 }
 /*# sourceMappingURL=main.css.map */

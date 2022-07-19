@@ -1,0 +1,36 @@
+.app{
+
+  position: relative;
+  padding-bottom: 266px;
+
+  &__holder{
+    background: rgba(0, 128, 0, 0.05);
+    border-radius: 20px;
+
+  }
+
+  &__title{
+    font-size: 56px;
+    line-height: 63px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 760px;
+    padding-top: 72px;
+    padding-bottom: 50px;
+  }
+
+  &__icon-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+    padding-bottom: 66px;
+  }
+
+  &__decor{
+    position: absolute;
+    top: 6px;
+    left: 503px;
+  }
+}
