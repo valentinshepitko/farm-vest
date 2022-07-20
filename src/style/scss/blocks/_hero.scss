@@ -1,6 +1,8 @@
 .hero{
 
+  margin-top: -260px;
   padding-bottom: 210px;
+  position: relative;
 
   &__title{
     font-weight: 700;
@@ -24,13 +26,15 @@
 
   &__get-started{
     text-align: center;
+    position: relative;
   }
 
   &__input{
+
     padding-left: 25px;
     width: 100%;
-    max-width: 420px;
-    height: 60px;
+    max-width: 533px;
+    height: 76px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -44,8 +48,42 @@
     border-radius: 10px;
     background-color: $green;
     color: white;
-    padding: 22px 25px;
+    padding: 22px 40px;
     border: none;
     cursor: pointer;
+    position: absolute;
+    right: 435px;
+    top: 7px;
+
+    &:hover{
+      background-color: rgba(38, 50, 56, 0.1);
+      border: 1px solid $black;
+      color: $black;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  &__decor{
+    position: absolute;
+  }
+
+  &__decor2{
+    position: absolute;
+  }
+
+  &__decor3{
+    position: absolute;
+  }
+
+  &__decor4{
+    position: absolute;
+  }
+
+  &__decor5{
+    position: absolute;
+  }
+
+  &__decor6{
+  position: absolute;
   }
 }

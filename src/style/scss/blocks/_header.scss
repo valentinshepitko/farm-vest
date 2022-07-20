@@ -2,6 +2,11 @@
 
   padding-top: 70px;
 
+  @include breakpoint('xxl'){
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   &__container{
     max-width: 1620px;
     width: 100%;
@@ -13,6 +18,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 310px;
+
+    @include breakpoint('xxl'){
+      gap: 200px;
+    }
   }
 
   &__nav{
@@ -78,5 +87,15 @@
     position: relative;
     top: -135px;
     left: 0;
+
+    @include breakpoint('xl'){
+      max-width: 280px;
+      left: -33px;
+    }
+
+    @include breakpoint('xxl'){
+      max-width: 350px;
+      left: -33px;
+    }
   }
 }

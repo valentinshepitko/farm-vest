@@ -43,12 +43,18 @@
         <p class="hero__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur
         </p>
-        <div class="hero__get-started">
+        <form class="hero__get-started">
             <label>
                 <input type="email" class="hero__input" placeholder="Enter your email">
             </label>
             <button class="hero__button">Get Started</button>
-        </div>
+        </form>
+<!--        <img src="src/img/decor.svg" alt="" class="hero__decor">-->
+<!--        <img src="src/img/decor2.svg" alt="" class="hero__decor2">-->
+<!--        <img src="src/img/decor3.svg" alt="" class="hero__decor3">-->
+<!--        <img src="src/img/decor4.svg" alt="" class="hero__decor4">-->
+<!--        <img src="src/img/decor4.svg" alt="" class="hero__decor5">-->
+<!--        <img src="src/img/decor6.svg" alt="" class="hero__decor6">-->
     </div>
 </section>
 <!--partners-->
@@ -240,8 +246,8 @@
                 Download <span class="green-text">FarmVest app</span> and invest in your future
             </h2>
             <div class="app__icon-holder">
-                <img src="src/img/appstore.png" alt="" class="app__icon">
-                <img src="src/img/playmarket.png" alt="" class="app__icon">
+                <a href="#" class="app__icon-link"><img src="src/img/appstore.png" alt="" class="app__icon"></a>
+                <a href="#" class="app__icon-link"><img src="src/img/playmarket.png" alt="" class="app__icon"></a>
             </div>
         </div>
         <svg class="app__decor" width="905" height="370" viewBox="0 0 905 370" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,10 +271,10 @@
                 <span>Subscribe to stay tuned for new web design and latest updates. Let's do it!</span>
             </div>
             <form class="footer__subscribe">
-                <label for="footer__input">
-                    <input type="email" class="footer__input" id="footer__input">
-                    <button class="footer__input-button">Subscribe</button>
+                <label for="footer__form">
+                    <input type="email" class="footer__input" id="footer__form" placeholder="Enter your email">
                 </label>
+                <button class="footer__input-button">Subscribe</button>
             </form>
         </div>
         <div class="footer__social-column">
@@ -277,9 +283,9 @@
             </div>
             <div class="footer__social-icon-holder">
                 <a href="#" class="footer__social-link">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg  width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="24" cy="24" r="24" fill="#008000"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.535 9.5C12.6497 9.5 9.5 12.6497 9.5 16.535V31.6049C9.5 35.4902 12.6497 38.6398 16.535 38.6398H31.6049C35.4902 38.6398 38.6398 35.4902 38.6398 31.6049V16.535C38.6398 12.6497 35.4902 9.5 31.6049 9.5H16.535ZM8.5 16.535C8.5 12.0974 12.0974 8.5 16.535 8.5H31.6049C36.0425 8.5 39.6398 12.0974 39.6398 16.535V31.6049C39.6398 36.0425 36.0425 39.6398 31.6049 39.6398H16.535C12.0974 39.6398 8.5 36.0425 8.5 31.6049V16.535ZM24.9462 18.5363C23.796 18.3657 22.6214 18.5622 21.5893 19.0977C20.5573 19.6332 19.7203 20.4805 19.1976 21.5191C18.6748 22.5577 18.4929 23.7347 18.6776 24.8827C18.8623 26.0306 19.4043 27.0911 20.2265 27.9133C21.0487 28.7355 22.1091 29.2775 23.2571 29.4622C24.4051 29.6469 25.5821 29.465 26.6207 28.9422C27.6593 28.4195 28.5066 27.5825 29.0421 26.5504C29.5776 25.5184 29.7741 24.3437 29.6035 23.1936C29.4295 22.0204 28.8829 20.9342 28.0442 20.0956C27.2056 19.2569 26.1194 18.7102 24.9462 18.5363ZM21.1288 18.2101C22.3475 17.5777 23.7347 17.3457 25.0929 17.5471C26.4783 17.7525 27.7609 18.3981 28.7513 19.3885C29.7417 20.3788 30.3873 21.6615 30.5927 23.0469C30.7941 24.4051 30.5621 25.7923 29.9297 27.011C29.2973 28.2298 28.2967 29.2181 27.0703 29.8354C25.8438 30.4528 24.4539 30.6676 23.0982 30.4495C21.7426 30.2314 20.4903 29.5913 19.5194 28.6204C18.5485 27.6495 17.9084 26.3972 17.6903 25.0415C17.4721 23.6859 17.687 22.296 18.3043 21.0695C18.9217 19.8431 19.91 18.8425 21.1288 18.2101ZM32.3584 15.2815C32.0822 15.2815 31.8584 15.5053 31.8584 15.7815C31.8584 16.0576 32.0822 16.2815 32.3584 16.2815H32.3756C32.6518 16.2815 32.8756 16.0576 32.8756 15.7815C32.8756 15.5053 32.6518 15.2815 32.3756 15.2815H32.3584Z" fill="white"/>
+                        <path  fill-rule="evenodd" clip-rule="evenodd" d="M16.535 9.5C12.6497 9.5 9.5 12.6497 9.5 16.535V31.6049C9.5 35.4902 12.6497 38.6398 16.535 38.6398H31.6049C35.4902 38.6398 38.6398 35.4902 38.6398 31.6049V16.535C38.6398 12.6497 35.4902 9.5 31.6049 9.5H16.535ZM8.5 16.535C8.5 12.0974 12.0974 8.5 16.535 8.5H31.6049C36.0425 8.5 39.6398 12.0974 39.6398 16.535V31.6049C39.6398 36.0425 36.0425 39.6398 31.6049 39.6398H16.535C12.0974 39.6398 8.5 36.0425 8.5 31.6049V16.535ZM24.9462 18.5363C23.796 18.3657 22.6214 18.5622 21.5893 19.0977C20.5573 19.6332 19.7203 20.4805 19.1976 21.5191C18.6748 22.5577 18.4929 23.7347 18.6776 24.8827C18.8623 26.0306 19.4043 27.0911 20.2265 27.9133C21.0487 28.7355 22.1091 29.2775 23.2571 29.4622C24.4051 29.6469 25.5821 29.465 26.6207 28.9422C27.6593 28.4195 28.5066 27.5825 29.0421 26.5504C29.5776 25.5184 29.7741 24.3437 29.6035 23.1936C29.4295 22.0204 28.8829 20.9342 28.0442 20.0956C27.2056 19.2569 26.1194 18.7102 24.9462 18.5363ZM21.1288 18.2101C22.3475 17.5777 23.7347 17.3457 25.0929 17.5471C26.4783 17.7525 27.7609 18.3981 28.7513 19.3885C29.7417 20.3788 30.3873 21.6615 30.5927 23.0469C30.7941 24.4051 30.5621 25.7923 29.9297 27.011C29.2973 28.2298 28.2967 29.2181 27.0703 29.8354C25.8438 30.4528 24.4539 30.6676 23.0982 30.4495C21.7426 30.2314 20.4903 29.5913 19.5194 28.6204C18.5485 27.6495 17.9084 26.3972 17.6903 25.0415C17.4721 23.6859 17.687 22.296 18.3043 21.0695C18.9217 19.8431 19.91 18.8425 21.1288 18.2101ZM32.3584 15.2815C32.0822 15.2815 31.8584 15.5053 31.8584 15.7815C31.8584 16.0576 32.0822 16.2815 32.3584 16.2815H32.3756C32.6518 16.2815 32.8756 16.0576 32.8756 15.7815C32.8756 15.5053 32.6518 15.2815 32.3756 15.2815H32.3584Z" fill="white"/>
                     </svg>
                 </a>
                 <a href="#" class="footer__social-link">
@@ -303,6 +309,21 @@
             <a href="tel:+2349123456789" class="footer__number">+2349123456789</a>
         </div>
     </div>
+        <div class="footer__line"></div>
+        <div class="footer__copyright-holder">
+            <div class="footer__copyright">
+                <span>© 2022 All Rights Reserved</span>
+            </div>
+            <div class="footer__nav-holder">
+                <ul class="footer__link-list">
+                    <li class="footer__link-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Terms of Use</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Sales and Refunds</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Legal</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </footer>
 </body>

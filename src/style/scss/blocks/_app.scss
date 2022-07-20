@@ -6,7 +6,6 @@
   &__holder{
     background: rgba(0, 128, 0, 0.05);
     border-radius: 20px;
-
   }
 
   &__title{
@@ -26,6 +25,16 @@
     gap: 24px;
     align-items: flex-start;
     padding-bottom: 66px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__icon-link{
+
+    &:hover{
+      box-shadow: 0 14px 13px -5px rgba(0,0,0,0.33);
+      transition: ease-in-out 0.1s;
+    }
   }
 
   &__decor{

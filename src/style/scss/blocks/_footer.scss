@@ -2,6 +2,11 @@
 
   background-color: rgba(242, 248, 242, 0.5);
 
+  @include breakpoint('xxl'){
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   &__container{
     max-width: 1620px;
     width: 100%;
@@ -14,6 +19,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 68px;
+    padding-bottom: 100px;
   }
 
   &__logo-column{
@@ -31,13 +37,57 @@
   }
 
   &__subscribe-column{
-    padding-right: 186px;
+    padding-right: 85px;
+    max-width: 532px;
+    width: 100%;
   }
 
   &__subscribe-text{
     font-size: 18px;
     line-height: 177%;
     max-width: 352px;
+    padding-bottom: 24px;
+  }
+
+  &__subscribe{
+    position: relative;
+  }
+
+  &__input {
+    max-width: 533px;
+    width: 100%;
+    height: 76px;
+    border: none;
+    outline: none;
+    background: rgba(38, 50, 56, 0.1);
+    border-radius: 10px;
+    padding-left: 25px;
+
+    &:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+  }
+
+  &__input-button{
+    border-radius: 10px;
+    background-color: $green;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 22px 25px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    &:hover{
+      background-color: rgba(38, 50, 56, 0.1);
+      border: 1px solid $black;
+      color: $black;
+      transition: ease-in-out 0.2s;
+    }
   }
 
   &__social-column{
@@ -54,5 +104,49 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+  }
+
+
+
+  &__call-title{
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+
+  &__number{
+    color: $black;
+
+    &:hover{
+      color: $green;
+      transition: ease-in-out 0.1s;
+    }
+  }
+
+  &__line{
+    border-top: 1px solid rgba(38, 50, 56, 0.31);
+    padding-bottom: 56px;
+  }
+
+ &__copyright-holder{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-bottom: 56px;
+ }
+
+ &__link-list{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px;
+ }
+
+  &__link{
+    color: $black;
+
+    &:hover{
+      color: $green;
+      transition: ease-in-out 0.1s;
+    }
   }
 }

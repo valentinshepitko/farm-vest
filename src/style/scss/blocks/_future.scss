@@ -8,6 +8,18 @@
     justify-content: space-between;
   }
 
+  &__content{
+    @include breakpoint('xxl'){
+      padding-right: 30px;
+    }
+  }
+
+  &__background{
+    @include breakpoint('xxl'){
+      padding-left: 30px;
+    }
+  }
+
   &__frame{
     border-radius: 20px;
     background: rgba(0, 128, 0, 0.05);

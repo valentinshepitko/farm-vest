@@ -64,5 +64,12 @@
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 1px;
+
+    &:hover{
+      background-color: white;
+      border: 1px solid $black;
+      color: $black;
+      transition: ease-in-out 0.2s;
+    }
   }
 }
