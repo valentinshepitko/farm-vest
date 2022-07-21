@@ -17,7 +17,6 @@
   &__nav-holder{
     display: flex;
     flex-wrap: wrap;
-    gap: 310px;
 
     @include breakpoint('xxl'){
       gap: 200px;

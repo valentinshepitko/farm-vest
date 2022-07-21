@@ -76,7 +76,6 @@ img {
 .header__nav-holder {
   display: flex;
   flex-wrap: wrap;
-  gap: 310px;
 }
 @media (max-width: 1440px) {
   .header__nav-holder {
