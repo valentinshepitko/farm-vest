@@ -6,6 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 1279px) {
+      width: 50%;
+      justify-content: center;
+      margin: 0 auto;
+    }
   }
 
   &__content{
