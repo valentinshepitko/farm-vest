@@ -3,6 +3,7 @@
   position: relative;
   padding-bottom: 200px;
 
+
   &__holder{
     background: rgba(0, 128, 0, 0.05);
     border-radius: 20px;
@@ -16,6 +17,11 @@
     max-width: 760px;
     padding-top: 72px;
     padding-bottom: 50px;
+
+    @media (max-width: 568px) {
+      font-size: 36px;
+      line-height: 43px;
+    }
   }
 
   &__icon-holder{

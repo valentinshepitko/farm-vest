@@ -22,11 +22,11 @@
     padding-bottom: 100px;
 
   @media (max-width: 1279px) {
-    width: 50%;
+    width: 80%;
     gap: 43px;
     margin: 0 auto;
     justify-content: center;
-  }
+    }
   }
 
   &__logo-column{
@@ -68,12 +68,21 @@
     }
   }
 
+  &__form-holder{
+    max-width: 533px;
+    margin: 0 auto;
+  }
+
   &__subscribe{
     position: relative;
+    
+    @media (max-width: 575px) {
+      text-align: center;
+    }
   }
 
   &__input {
-    max-width: 533px;
+
     width: 100%;
     height: 76px;
     border: none;
@@ -81,6 +90,10 @@
     background: rgba(38, 50, 56, 0.1);
     border-radius: 10px;
     padding-left: 25px;
+
+    @media (max-width: 575px) {
+      margin-bottom: 10px;
+    }
 
     &:focus::-webkit-input-placeholder {
       color: transparent;
@@ -100,6 +113,13 @@
     position: absolute;
     right: 5px;
     top: 5px;
+    
+    @media (max-width: 575px) {
+      font-size: 14px;
+      padding: 25px 15px;
+      position: relative;
+      margin: 0 auto;
+    }
 
     &:hover{
       background-color: rgba(38, 50, 56, 0.1);
@@ -129,6 +149,11 @@
     gap: 16px;
   }
 
+  &__call-column{
+    @media (max-width: 575px) {
+      text-align: left;
+    }
+  }
 
 
   &__call-title{
@@ -156,6 +181,10 @@
    flex-wrap: wrap;
    justify-content: space-between;
    padding-bottom: 56px;
+   
+   @media (max-width: 880px) {
+     gap: 45px;
+   }
  }
 
  &__link-list{

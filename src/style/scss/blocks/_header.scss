@@ -12,11 +12,18 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-holder{
+    padding-top: 15px;
   }
 
   &__nav-holder{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 170px;
 
     @include breakpoint('xxl'){
       gap: 200px;

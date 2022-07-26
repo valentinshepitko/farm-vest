@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__container flex-container">
+    <div class="header__container">
       <div class="header__logo-holder">
           <img src="src/img/logo.svg" alt="" class="header__logo">
       </div>
@@ -43,12 +43,14 @@
         <p class="hero__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur
         </p>
-        <form class="hero__get-started">
-            <label>
-                <input type="email" class="hero__input" placeholder="Enter your email">
-            </label>
-            <button class="hero__button">Get Started</button>
-        </form>
+       <div class="hero__form-holder">
+           <form class="hero__get-started">
+               <label>
+                   <input type="email" data-required="email" class="hero__input" placeholder="Enter your email">
+                   <button class="hero__button">Get Started</button>
+               </label>
+           </form>
+       </div>
 <!--        <img src="src/img/decor.svg" alt="" class="hero__decor">-->
 <!--        <img src="src/img/decor2.svg" alt="" class="hero__decor2">-->
 <!--        <img src="src/img/decor3.svg" alt="" class="hero__decor3">-->
@@ -207,7 +209,7 @@
         <div class="reviews__holder">
             <div class="reviews__column">
                 <div class="reviews__image-holder">
-                    <img src="src/img/tonya.png" alt="" class="reviews-image">
+                    <img src="src/img/tonya.png" alt="" class="reviews__image">
                 </div>
                 <div class="reviews__content">
                     <div class="reviews__text">
@@ -220,7 +222,7 @@
             </div>
             <div class="reviews__column">
                 <div class="reviews__image-holder">
-                    <img src="src/img/grace.png" alt="" class="reviews-image">
+                    <img src="src/img/grace.png" alt="" class="reviews__image">
                 </div>
                 <div class="reviews__content">
                     <div class="reviews__text">
@@ -269,12 +271,14 @@
             <div class="footer__subscribe-text">
                 <span>Subscribe to stay tuned for new web design and latest updates. Let's do it!</span>
             </div>
-            <form class="footer__subscribe">
-                <label for="footer__form">
-                    <input type="email" class="footer__input" id="footer__form" placeholder="Enter your email">
-                </label>
-                <button class="footer__input-button">Subscribe</button>
-            </form>
+            <div class="footer__form-holder">
+                <form class="footer__subscribe">
+                    <label for="footer__form">
+                        <input type="email" class="footer__input" id="footer__form" placeholder="Enter your email">
+                    </label>
+                    <button class="footer__input-button">Subscribe</button>
+                </form>
+            </div>
         </div>
         <div class="footer__social-column">
             <div class="footer__column-title">

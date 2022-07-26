@@ -24,23 +24,26 @@
     padding-bottom: 50px;
   }
 
+  &__form-holder{
+    max-width: 533px;
+    margin: 0 auto;
+  }
+
   &__get-started{
     text-align: center;
     position: relative;
   }
 
   &__input{
-
     padding-left: 25px;
     width: 100%;
-    max-width: 533px;
     height: 76px;
+    font-weight: 500;
     border: none;
     outline: none;
     border-radius: 10px;
     background: rgba(38, 50, 56, 0.1);
     &:focus::-webkit-input-placeholder { color:transparent;
-
   }
 }
 
@@ -52,8 +55,8 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 435px;
-    top: 7px;
+    right: 5px;
+    top: 8px;
 
     &:hover{
       background-color: rgba(38, 50, 56, 0.1);

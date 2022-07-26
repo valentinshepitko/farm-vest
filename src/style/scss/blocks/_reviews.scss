@@ -31,11 +31,33 @@
     flex-wrap: wrap;
   }
 
+  &__image-holder{
+    text-align: center;
+    margin: 0 auto;
+
+    //@media (max-width: 675px) {
+    //  padding-bottom: 20px;
+    //}
+  }
+
+  &__image{
+
+    @media (max-width: 675px) {
+      border-radius: 20px;
+    }
+  }
+
   &__content{
     padding-left: 32px;
     position: relative;
     background: rgba(0, 128, 0, 0.05);
     border-radius:0 20px 20px 0;
+
+    @media (max-width: 675px) {
+      border-radius: 20px;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   &__text{
