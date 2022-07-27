@@ -17,25 +17,37 @@
     @include breakpoint('xxl'){
       padding-right: 30px;
     }
+
+    @include breakpoint('md'){
+      //text-align: center;
+      padding-right: 0;
+    }
   }
 
   &__background{
     @include breakpoint('xxl'){
       padding-left: 30px;
     }
+
+    @include breakpoint('md'){
+      padding-left: 0;
+      max-width: 400px;
+    }
   }
 
-  &__frame{
+  &__background{
     border-radius: 20px;
     background: rgba(0, 128, 0, 0.05);
-    width: 750px;
-    height: 936px;
+    max-width: 750px;
+    width: 100%;
+    max-height: 936px;
     position: relative;
   }
+
+
   &__image{
-    position: absolute;
-    left: 45px;
-    top: 166px;
+    padding-top: 100px;
+    margin: 0 auto;
   }
 
   &__decor{
@@ -49,6 +61,11 @@
     font-size: 64px;
     line-height: 72px;
     max-width: 465px;
+
+    @include breakpoint('xs'){
+      font-size: 54px;
+      line-height: 62px;
+    }
   }
 
   &__text{
@@ -66,6 +83,8 @@
     position: relative;
     margin-bottom: 24px;
 
+
+
     &:after{
       content: '';
       position: absolute;
@@ -74,6 +93,10 @@
       width: 24px;
       height: 24px;
       background-image: url('../../../../src/img/mark.svg');
+
+      @include breakpoint('md'){
+        right: 10px;
+      }
     }
   }
 
@@ -82,5 +105,9 @@
     padding-left: 25px;
     padding-top: 33px;
     padding-bottom: 24px;
+
+    @include breakpoint('md'){
+      font-size: 18px;
+    }
   }
 }

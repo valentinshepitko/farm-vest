@@ -24,12 +24,21 @@
     @include breakpoint('xxl'){
       padding-right: 30px;
     }
+
+    @media (max-width: 776px) {
+      padding-right: 0;
+    }
   }
 
   &__title{
     font-size: 64px;
     line-height: 72px;
     max-width: 465px;
+
+    @include breakpoint('xs'){
+      font-size: 54px;
+      line-height: 62px;
+    }
   }
 
   &__text{
@@ -47,6 +56,10 @@
     padding-bottom: 48px;
     font-size: 20px;
 
+    @include breakpoint('xs'){
+      font-size: 15px;
+    }
+
     &:before{
       counter-increment: JediCSS;
       content: counter(JediCSS);
@@ -62,7 +75,22 @@
       font-size: 36px;
       font-weight: 700;
       padding-top: 15px;
+
+      @media (max-width: 700px) {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  &__image{
+
+    @include breakpoint('sm'){
+      max-width: 350px;
+      padding-top: 30px;
     }
 
+    //@include breakpoint('md'){
+    //  max-width: 400px;
+    //}
   }
 }
